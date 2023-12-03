@@ -1,20 +1,20 @@
 plugins {
     id 'java-library'
-//    id 'io.qameta.allure' version '2.11.2'
+    id 'io.qameta.allure' version '2.11.2'
 }
-//allure {
-//    report {
-//        version.set("2.24.0")
-//    }
-//    adapter {
-//        aspectjWeaver.set(true)
-//        frameworks {
-//            junit5{
-//                adapterVersion.set("2.24.0")
-//            }
-//        }
-//    }
-//}
+allure {
+    report {
+        version.set("2.24.0")
+    }
+    adapter {
+        aspectjWeaver.set(true)
+        frameworks {
+            junit5{
+                adapterVersion.set("2.24.0")
+            }
+        }
+    }
+}
 
 repositories {
     mavenCentral()
@@ -27,13 +27,11 @@ compileTestJava{
     options.encoding = 'UTF-8'
 }
 
-
 dependencies {
     testImplementation (
             "com.codeborne:selenide:7.0.2",
             "org.junit.jupiter:junit-jupiter:5.10.1",
-//            'io.qameta.allure:allure-selenide:2.24.0'
-
+            'io.qameta.allure:allure-selenide:2.24.0'
     )
 }
 
