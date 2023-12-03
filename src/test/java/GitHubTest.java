@@ -17,7 +17,7 @@ public class GitHubTest {
     private static final int ISSUE = 10;
     @Test
     @DisplayName("Selenide Test with listener")
-    @Owner("Aleksandr Menskaya")
+    @Owner("Aleksandra Menskaya")
     @Story("Проверка Issue ")
     public void selenideIssueTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -33,7 +33,7 @@ public class GitHubTest {
 
     @Test
     @DisplayName("Step Test")
-    @Owner("Aleksandr Menskaya")
+    @Owner("Aleksandra Menskaya")
     @Story("Проверка Issue ")
     public void lambdaIssueTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
@@ -58,7 +58,7 @@ public class GitHubTest {
     }
     @Test
     @DisplayName("Annotated Test")
-    @Owner("Aleksandr Menskaya")
+    @Owner("Aleksandra Menskaya")
     @Story("Проверка Issue ")
     public void annotatedStepIssueTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
