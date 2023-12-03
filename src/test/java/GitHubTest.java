@@ -19,7 +19,7 @@ public class GitHubTest {
     @DisplayName("Selenide Test with listener")
     @Owner("Aleksandr Menskaya")
     @Story("Проверка Issue ")
-    public void SelenideIssueTest() {
+    public void selenideIssueTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         open("https://github.com/");
@@ -35,7 +35,7 @@ public class GitHubTest {
     @DisplayName("Step Test")
     @Owner("Aleksandr Menskaya")
     @Story("Проверка Issue ")
-    public void LambdaIssueTest() {
+    public void lambdaIssueTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
 
         step("Открываем гланую страницу", () -> {
@@ -60,7 +60,7 @@ public class GitHubTest {
     @DisplayName("Annotated Test")
     @Owner("Aleksandr Menskaya")
     @Story("Проверка Issue ")
-    public void AnnotatedStepIssueTest() {
+    public void annotatedStepIssueTest() {
         SelenideLogger.addListener("allure", new AllureSelenide());
         AnnotatedStep steps = new  AnnotatedStep();
 
